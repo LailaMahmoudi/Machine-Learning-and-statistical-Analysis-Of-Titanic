@@ -16,7 +16,7 @@
 ## Requirements:
 
 - __Python__
-- [__JupiterNotebook__](https://jupyter.org/install)
+- [__JupyterNotebook__](https://jupyter.org/install)
 - [__Sklearn__](https://scikit-learn.org/stable/install.html)
 - [__Numpy__](https://numpy.org/install/)
 - [__Pandas__](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html)
