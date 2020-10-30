@@ -1,11 +1,12 @@
 # Machine-Learning-and-statistical-Analysis-Of-Titanic
 
-
-![](https://static1.squarespace.com/static/5006453fe4b09ef2252ba068/5095eabce4b06cb305058603/5095eabce4b02d37bef4c24c/1352002236895/100_anniversary_titanic_sinking_by_esai8mellows-d4xbme8.jpg)
-
 ## Goal: 
 
 - The mean goal of this repository is to predict if a passenger survived the sinking of the Titanic or not, based on multiple features such as sex, age ,...etc.
+
+
+
+![](https://static1.squarespace.com/static/5006453fe4b09ef2252ba068/5095eabce4b06cb305058603/5095eabce4b02d37bef4c24c/1352002236895/100_anniversary_titanic_sinking_by_esai8mellows-d4xbme8.jpg)
 
 ## Steps :
 
