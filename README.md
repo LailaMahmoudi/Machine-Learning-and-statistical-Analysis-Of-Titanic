@@ -61,13 +61,11 @@ and combining existing features to produce a more useful one, and dropping the c
 - Splitting the training data.
 - Feature Scaling 
 
-# Step 4 : Modeling
+# Step 4 : Modeling and Evaluating the performance of all models using the performance metrics.
 
-In this part we'll try differents models of Machine learning: Logistic Regression, Random Forest, Support Vector Machine, Decision tree, GaussianNB Model and KNeighbors Model
+- In this part we'll try differents models of Machine learning: Logistic Regression, Random Forest, Support Vector Machine, Decision tree, GaussianNB Model and KNeighbors Model.
 
-# Step 5 : Performance Metrics
-
-Evaluating the machine learning model is a crucial part in any data science project. There are many metrics that helps us to evaluate our model accuracy.
+- Evaluating the machine learning model is a crucial part in any data science project. There are many metrics that helps us to evaluate our model accuracy.
 
 -Classification Accuracy
 -Confusion matrix
