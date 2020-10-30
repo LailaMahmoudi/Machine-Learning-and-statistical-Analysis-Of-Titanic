@@ -1,8 +1,7 @@
 # Machine-Learning-and-statistical-Analysis-Of-Titanic
+The mean goal of this repository is to predict if a passenger survived the sinking of the Titanic or not, based on multiple features such as sex, age ,...etc.
 
-## Goal: 
 
-- The mean goal of this repository is to predict if a passenger survived the sinking of the Titanic or not, based on multiple features such as sex, age ,...etc.
 
 
 
