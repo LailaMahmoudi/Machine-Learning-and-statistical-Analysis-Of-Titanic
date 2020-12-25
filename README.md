@@ -2,10 +2,7 @@
 The mean goal of this repository is to predict if a passenger survived the sinking of the Titanic or not, based on multiple features such as sex, age ,...etc.
 
 
-
-
-
-![](https://static1.squarespace.com/static/5006453fe4b09ef2252ba068/5095eabce4b06cb305058603/5095eabce4b02d37bef4c24c/1352002236895/100_anniversary_titanic_sinking_by_esai8mellows-d4xbme8.jpg)
+![ ](https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/57429716_2030860760555937_2750062083545497600_n.jpg?_nc_cat=100&ccb=2&_nc_sid=8bfeb9&_nc_ohc=y5d_WudgJy0AX9PNi5o&_nc_ht=scontent-arn2-2.xx&oh=a630ca82a715594c37e77c981b2f0b12&oe=6004F26F)
 
 ## Steps :
 
