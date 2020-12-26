@@ -6,11 +6,12 @@ The mean goal of this repository is to predict if a passenger survived the sinki
 
 ## Steps :
 
-- EDA
-- Feature Engineering
-- Modeling
-- Hyperparameter Tunning
-- Predictions
+- STEP 1: Exploratory Data Analysis
+- STEP 2: Feature Engineering
+- STEP 3: Pre-Modeling Tasks
+- STEP 4: Modeling
+- STEP 5: Evaluating the performance of the model
+- STEP 6: Predictions and submission
 
 
 ## Requirements:
@@ -28,28 +29,41 @@ The mean goal of this repository is to predict if a passenger survived the sinki
 
 - __Kaggle__ (https://www.kaggle.com/c/titanic/data).
 
+
+
 # Step 1 : Exploratory Data Analysis
 
 In this phase we will extract the dataset and explore it, and we will do some descriptive statistics, and visualize our data.
 
- - __Data Extraction__
- - __Viewing the data__
- - __Descriptive statistics__
- - __Data Visualization__
+ ### - __Data Extraction__
+ ### - __Viewing the data__
+ ### - __Descriptive statistics__
  
-  ![](https://www.kaggleusercontent.com/kf/45328398/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..RYRkrmeMA1tPmW4_EhoXNA.2xvrqL1jyjnFThTkGo8td9BpC4bzGs55TNYb5Ko7bP1N-g3_WGRq4WuYjZ6pdrmWbQS3193g9HL1pjWg7ki66SWE-z5tunnysy41V7m7F094D--PIJl7-OjVr1aSUgBzkH_CFbOYW2Zc6MBvgy1Xrh1xwARn8G7sabU6y2drErclMRZXM-ZXwnThhOmj_yJH6GM1_338RxKqmpZlbKDeLwdj2q6u9jDjlGsjLPn625ksMS-BPcDqQl74x8Y8t8FQjHP2oL9WD9lO_2rD4qo3iKwDAwhGj-CTG4lyCf7wRKWgTq0dvosjHeXyqqzcUKecyeE8i7bxVuCxoHEJvH1oVncZTVt06L_fPTpKmaguM60bdtbEWXqeM4KTDEH99oC3R7127ARol_NCaUbyld4QQV5Srq6WAwk8vJOGA1yqP8l513ge7esXdBuuCKXBKuSCJkf2cePkRamWYddb359lDLQIGGN2Zm_1V5YLIwhcIpilWLj8qyj9x1E5GIwgjeRQd_3KlBiJpBiFbG8HYVBQgUe0vNvAWUbzrSYnBRzwlxwIYR76rOU-OP4-iDKSONfGrfRq3j60fEtIFkyhThUnjxDAEfaX_dE-7grzLhkM_NTzXAYpV_4iErcbfuSK6MZJxadPrRmDiZKfKGcAx07whsVUdLnQG8-qSvZA7yTNc4SYFEV1TAKtp_SctUic8tWe.ATpeN3FaSOZOH_sPsDZuUg/__results___files/__results___26_1.png)
+ ###### Correlation Map
+   
+![](https://www.kaggleusercontent.com/kf/50302331/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..61eQA5kAS7Vbn9dgdXA6Fg.owQrqdb6Qrfo8YL3sSlSFUnZJGj387fy-Dx2e7k3LNZg_3L4eLuodEz6tttCI3ySa7NL0G-AbhQn5A85X23o3imDuQ3UDt-OprWqsaaLZLM3rEJLvBQyVQsUKHOiCOYPT58dA8NpSXduTOviWCFhx_Bcstiv35JdLAbQdf5wzvem1v_t5IeWmq0PoRR7dC-yFq7YDIO-hayrpmFVd-_Dkvut-2qDF1QL1jRRJu_dL8KczHHM5L4zxBiZw38MrsikBQ07wB6yVl9fyr7o_p-Agn-6qwpT6UU_qepb4DPmsGS7HTkLecEasIpspz-deRTXSg2FEO5Iiis0ERfjdIlf6LzC4Ovy469iiu9j8rwRh6k8bRi9JGrQIsb_DEIE1DJc76PVPqxffVp3okPsNvxkeWJ92L4hrjkLjTXDox1HFHifn8eoKGEewfb6JePnX6u9bn1fxqlVwxfO3yuUwW5jWKGZ70nv1Rg5FuFaT-f0hBQMQOsI_KzVDpyXKGAAZFZn52PX7_xcDJyTb52tqiu4n9kygYb1rPNF32AbN1TvdkwF-b775VX9oJDGSoV3o-GZxtKLtHdH9HoMo9LUgeWkZlUktKrVOWpBgh70hxdHZGq-t7E9RNDOYqvLjSqrFwztDnHkQMBlQDOFstv7f0nUHn1S28UDRJWRxfOarA3mLWLfaz3ASoUnADcsbWEEBdwy.HarOxfOP0TerXCwJvDZ--g/__results___files/__results___22_0.png)
+       
+## - __Data Visualization__
+ 
+ ###### - Distribution of Age
+ 
+  ![](https://www.kaggleusercontent.com/kf/50302331/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..61eQA5kAS7Vbn9dgdXA6Fg.owQrqdb6Qrfo8YL3sSlSFUnZJGj387fy-Dx2e7k3LNZg_3L4eLuodEz6tttCI3ySa7NL0G-AbhQn5A85X23o3imDuQ3UDt-OprWqsaaLZLM3rEJLvBQyVQsUKHOiCOYPT58dA8NpSXduTOviWCFhx_Bcstiv35JdLAbQdf5wzvem1v_t5IeWmq0PoRR7dC-yFq7YDIO-hayrpmFVd-_Dkvut-2qDF1QL1jRRJu_dL8KczHHM5L4zxBiZw38MrsikBQ07wB6yVl9fyr7o_p-Agn-6qwpT6UU_qepb4DPmsGS7HTkLecEasIpspz-deRTXSg2FEO5Iiis0ERfjdIlf6LzC4Ovy469iiu9j8rwRh6k8bRi9JGrQIsb_DEIE1DJc76PVPqxffVp3okPsNvxkeWJ92L4hrjkLjTXDox1HFHifn8eoKGEewfb6JePnX6u9bn1fxqlVwxfO3yuUwW5jWKGZ70nv1Rg5FuFaT-f0hBQMQOsI_KzVDpyXKGAAZFZn52PX7_xcDJyTb52tqiu4n9kygYb1rPNF32AbN1TvdkwF-b775VX9oJDGSoV3o-GZxtKLtHdH9HoMo9LUgeWkZlUktKrVOWpBgh70hxdHZGq-t7E9RNDOYqvLjSqrFwztDnHkQMBlQDOFstv7f0nUHn1S28UDRJWRxfOarA3mLWLfaz3ASoUnADcsbWEEBdwy.HarOxfOP0TerXCwJvDZ--g/__results___files/__results___35_0.png)
   
+  ###### - Sex feature vs Survived feature
   
-![](https://www.kaggleusercontent.com/kf/45328398/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..ozUvT0OQ6up7FnzalgqK2w.qmRBeybR_4EAu7ALz8TCmeyzt5KxLgMQWZeO2n_nf7HQ8Tjk0lgyk-cRf3ffaRtzHwjKdV5_YY0P9Yac0ATUHjxGwK9wiPBy3rPjICUwTQ3OGadj_d83wehZbtBhFUNTkvuI5BPRaTQkL--xVf_YjyEU6l7miworc3M63-s1PU4_RbzUZeRfuyaBrAPHbe4fK3a8zMM2-Xvk1wqr3RXVCsXhNtngMgDt1Dx66nhXMM_JMSDkiWdWZmVWGEHmfut99Wd8Kj4zOo1VmYDZR4uTRi1JtfLiRDq3Rto3R3SxdHiYvVxsLRoxrotlmdLitA13mO7GmmQtc_5GDFpnxN9AtGdT45I7-gTVI5-h1Fk_QeaQJfsaC7UM6u2XHEXN8br90NoimEH-n5-sdD76gFi2DiiYJASaEFXNcBjVc5qN9L-5I0huiVFUrCoeXgzEwbQocfA0lQknWLG_CulrEbVsVW2e7KXHaRpYs0Tn4wedo_r2H5eVAZFj3ypGt9JaDLgi7EfwSI__wT5n2YyxzTFvGXtcBeRbPgUMM5NY5wMA_9dfAVCjbja415obZFjFUa4adLgiQEC4lSn0P4jMwoE0Glog01akw9hklHlNGf6B4Zen_odf72t4w0tWJbAZXS5-yGIIzRS_kvknn3Xqvf77BiuPqyD6GX8KdU8O5NYXEgQ2JOIjzfTBeosFc24TlUxK.k6hHdA7NvvRlLAzVHS0Gog/__results___files/__results___40_0.png)
+![](https://www.kaggleusercontent.com/kf/50302331/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..61eQA5kAS7Vbn9dgdXA6Fg.owQrqdb6Qrfo8YL3sSlSFUnZJGj387fy-Dx2e7k3LNZg_3L4eLuodEz6tttCI3ySa7NL0G-AbhQn5A85X23o3imDuQ3UDt-OprWqsaaLZLM3rEJLvBQyVQsUKHOiCOYPT58dA8NpSXduTOviWCFhx_Bcstiv35JdLAbQdf5wzvem1v_t5IeWmq0PoRR7dC-yFq7YDIO-hayrpmFVd-_Dkvut-2qDF1QL1jRRJu_dL8KczHHM5L4zxBiZw38MrsikBQ07wB6yVl9fyr7o_p-Agn-6qwpT6UU_qepb4DPmsGS7HTkLecEasIpspz-deRTXSg2FEO5Iiis0ERfjdIlf6LzC4Ovy469iiu9j8rwRh6k8bRi9JGrQIsb_DEIE1DJc76PVPqxffVp3okPsNvxkeWJ92L4hrjkLjTXDox1HFHifn8eoKGEewfb6JePnX6u9bn1fxqlVwxfO3yuUwW5jWKGZ70nv1Rg5FuFaT-f0hBQMQOsI_KzVDpyXKGAAZFZn52PX7_xcDJyTb52tqiu4n9kygYb1rPNF32AbN1TvdkwF-b775VX9oJDGSoV3o-GZxtKLtHdH9HoMo9LUgeWkZlUktKrVOWpBgh70hxdHZGq-t7E9RNDOYqvLjSqrFwztDnHkQMBlQDOFstv7f0nUHn1S28UDRJWRxfOarA3mLWLfaz3ASoUnADcsbWEEBdwy.HarOxfOP0TerXCwJvDZ--g/__results___files/__results___40_1.png)
 
-# Step 2 : Feature Engineering
+  ###### - Embarked vs Survived
 
-A critical part of the success of a Machine Learning Project is Feature Engineering. 
+![](https://www.kaggleusercontent.com/kf/50302331/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..61eQA5kAS7Vbn9dgdXA6Fg.owQrqdb6Qrfo8YL3sSlSFUnZJGj387fy-Dx2e7k3LNZg_3L4eLuodEz6tttCI3ySa7NL0G-AbhQn5A85X23o3imDuQ3UDt-OprWqsaaLZLM3rEJLvBQyVQsUKHOiCOYPT58dA8NpSXduTOviWCFhx_Bcstiv35JdLAbQdf5wzvem1v_t5IeWmq0PoRR7dC-yFq7YDIO-hayrpmFVd-_Dkvut-2qDF1QL1jRRJu_dL8KczHHM5L4zxBiZw38MrsikBQ07wB6yVl9fyr7o_p-Agn-6qwpT6UU_qepb4DPmsGS7HTkLecEasIpspz-deRTXSg2FEO5Iiis0ERfjdIlf6LzC4Ovy469iiu9j8rwRh6k8bRi9JGrQIsb_DEIE1DJc76PVPqxffVp3okPsNvxkeWJ92L4hrjkLjTXDox1HFHifn8eoKGEewfb6JePnX6u9bn1fxqlVwxfO3yuUwW5jWKGZ70nv1Rg5FuFaT-f0hBQMQOsI_KzVDpyXKGAAZFZn52PX7_xcDJyTb52tqiu4n9kygYb1rPNF32AbN1TvdkwF-b775VX9oJDGSoV3o-GZxtKLtHdH9HoMo9LUgeWkZlUktKrVOWpBgh70hxdHZGq-t7E9RNDOYqvLjSqrFwztDnHkQMBlQDOFstv7f0nUHn1S28UDRJWRxfOarA3mLWLfaz3ASoUnADcsbWEEBdwy.HarOxfOP0TerXCwJvDZ--g/__results___files/__results___50_0.png)
 
-__Feature Engineering__ is a process of transforming the data into data which is easier to interept and also, to increase the predictive power of learning algorithm
+ 
+# STEP 2: Feature Engineering 
+ 
+- Feature Engineering is a process of transforming the data into data which is easier to interept and also, to increase the predictive power of learning             algorithm.
 
-In Feature Engineering we will create a new features that could improve predictions such as if the passenger is alone or not,
-and combining existing features to produce a more useful one, and dropping the columns doesn't improve predictions.
+- In this part we will create a new features that could improve predictions such as if the passenger is alone or not,
+  and combining existing features to produce a more useful one, and dropping the columns doesn't improve predictions.
 
 
 # Step 3 : Pre-Modeling Tasks
@@ -57,20 +71,31 @@ and combining existing features to produce a more useful one, and dropping the c
 - Separating the independant and the dependant variable.
 - Splitting the training data.
 
-# Step 4 : Modeling and Evaluating the performance of all models using the performance metrics.
+# Step 4 : Modeling the Random Forest Model with Hyperparameters Tunning using the GridSearchCV.
 
-- In this part we'll try differents models of Machine learning: Logistic Regression, Random Forest, Support Vector Machine, Decision tree, GaussianNB Model and KNeighbors Model.
-
-- Evaluating the machine learning model is a crucial part in any data science project. There are many metrics that helps us to evaluate our model accuracy.
-
--Classification Accuracy
--Confusion matrix
--Precision Score
--Recall Score
--AUC & ROC Curve
+ - In this part we'll try the Random Forest Model.
+ 
+# Step 5 : Evaluating the performance of Random Forest using the performance metrics.
 
 
-# Step 5 : Predictions and submit the results
+ - Evaluating the machine learning model is a crucial part in any data science project. There are many metrics that helps us to evaluate our model accuracy.
+
+- __Classification Accuracy__
+- __Classification Report__
+- __Precision Score__
+- __Recall Score__
+- __Confusion matrix__
+
+ ![](https://www.kaggleusercontent.com/kf/50303687/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..T-lvH9KJMdlxLaZkae0Odg.MPvHcfIuIccgOrbpS6222zyedTVz9_oqTG7tjalcXZ70RFMivUm1bsYt2vzNE9sWLfRnVd1Nmirtmqy527-vstPVezZ-BbyJYhoziN0TZE1Bz95GT1n00G8x-YNhRVHLc_bn0YOMuuQT22kFEjvZdJfsUGc9DJwRKMNw9cR9JPxMSilKzkML9xhCDN-jtqtgr5rhVsTq0vBp34vKiiywDfVMlXvEWazqGljW9fw0LWOq9b8oyB92VxZsyGSnOVjfSwhztiD2XTuV-fVzzfIDpR5sduih8i6cErUT0GeTB8fgL4egf_xsKjoL-hvu-klc19iCq0c7e3vFtRVCL5ikOtwAd9kIRuQ0imBiCGVwYp4UsmR8eDJjpHsuucrtXa_5y3xMfvTdSxVAnF5oM-5xXEQzd3I5SGRBBxLJBXep90viQNfITkf559E0UsTHGCxuTNcJs9KNIHpOUPX2ngDWVkhTwN61nL561SEcODrI8YLh-_k7plT5sRIaEE8IIgh4tAY0_qqz-xdWGUzggnDUMnT9s4To9UPF8mielAVAXGkVJC-2lKbe0z0m8YCrv0dLwBGYGxE5i81vY-RhioVQ-HEBh_iLHYp1NbgAYY8tYDIySJuh08aiKP0R9d0QhE8c9X0zXapHZ9iLsmhJGZ9A4Dxptu61qDeow42IaUE9TeIlfvA1SPeoqZKreL-nXhWs.0T4hLxOSamzJE5BuHmWDgg/__results___files/__results___102_1.png)
+ 
+- __AUC & ROC Curve__
+
+ ![](https://www.kaggleusercontent.com/kf/50303687/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..T-lvH9KJMdlxLaZkae0Odg.MPvHcfIuIccgOrbpS6222zyedTVz9_oqTG7tjalcXZ70RFMivUm1bsYt2vzNE9sWLfRnVd1Nmirtmqy527-vstPVezZ-BbyJYhoziN0TZE1Bz95GT1n00G8x-YNhRVHLc_bn0YOMuuQT22kFEjvZdJfsUGc9DJwRKMNw9cR9JPxMSilKzkML9xhCDN-jtqtgr5rhVsTq0vBp34vKiiywDfVMlXvEWazqGljW9fw0LWOq9b8oyB92VxZsyGSnOVjfSwhztiD2XTuV-fVzzfIDpR5sduih8i6cErUT0GeTB8fgL4egf_xsKjoL-hvu-klc19iCq0c7e3vFtRVCL5ikOtwAd9kIRuQ0imBiCGVwYp4UsmR8eDJjpHsuucrtXa_5y3xMfvTdSxVAnF5oM-5xXEQzd3I5SGRBBxLJBXep90viQNfITkf559E0UsTHGCxuTNcJs9KNIHpOUPX2ngDWVkhTwN61nL561SEcODrI8YLh-_k7plT5sRIaEE8IIgh4tAY0_qqz-xdWGUzggnDUMnT9s4To9UPF8mielAVAXGkVJC-2lKbe0z0m8YCrv0dLwBGYGxE5i81vY-RhioVQ-HEBh_iLHYp1NbgAYY8tYDIySJuh08aiKP0R9d0QhE8c9X0zXapHZ9iLsmhJGZ9A4Dxptu61qDeow42IaUE9TeIlfvA1SPeoqZKreL-nXhWs.0T4hLxOSamzJE5BuHmWDgg/__results___files/__results___112_0.png)
+
+
+
+# Step 6 : Predictions and submit the results
+
  
  
 
@@ -84,8 +109,5 @@ and combining existing features to produce a more useful one, and dropping the c
 
 - [How to Build a Machine Learning Model](https://towardsdatascience.com/how-to-build-a-machine-learning-model-439ab8fb3fb1).
 
-- [Ensemble methods: bagging, boosting and stacking](https://towardsdatascience.com/ensemble-methods-bagging-boosting-and-stacking-c9214a10a205).
-
 - [How to find optimal parameters using GridSearchCV?](https://www.dezyre.com/recipes/find-optimal-parameters-using-gridsearchcv).
 
-- [Gradient Boosting Classifiers in Python with Scikit-Learn](https://stackabuse.com/gradient-boosting-classifiers-in-python-with-scikit-learn/).
