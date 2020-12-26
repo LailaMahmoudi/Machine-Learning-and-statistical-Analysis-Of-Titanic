@@ -71,9 +71,9 @@ In this phase we will extract the dataset and explore it, and we will do some de
 - Separating the independant and the dependant variable.
 - Splitting the training data.
 
-# Step 4 : Modeling the Random Forest Model with Hyperparameters Tunning using the GridSearchCV.
+# Step 4 : Modeling the Random Forest Model.
 
- - In this part we'll try the Random Forest Model.
+ - In this part we'll try to build a Random Forest Model and then tunning the hyperparameters using the GridSearcCV.
  
 # Step 5 : Evaluating the performance of Random Forest using the performance metrics.
 
