@@ -58,7 +58,7 @@ In this phase we will extract the dataset and explore it, and we will do some de
 ![](https://www.kaggleusercontent.com/kf/50302331/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..61eQA5kAS7Vbn9dgdXA6Fg.owQrqdb6Qrfo8YL3sSlSFUnZJGj387fy-Dx2e7k3LNZg_3L4eLuodEz6tttCI3ySa7NL0G-AbhQn5A85X23o3imDuQ3UDt-OprWqsaaLZLM3rEJLvBQyVQsUKHOiCOYPT58dA8NpSXduTOviWCFhx_Bcstiv35JdLAbQdf5wzvem1v_t5IeWmq0PoRR7dC-yFq7YDIO-hayrpmFVd-_Dkvut-2qDF1QL1jRRJu_dL8KczHHM5L4zxBiZw38MrsikBQ07wB6yVl9fyr7o_p-Agn-6qwpT6UU_qepb4DPmsGS7HTkLecEasIpspz-deRTXSg2FEO5Iiis0ERfjdIlf6LzC4Ovy469iiu9j8rwRh6k8bRi9JGrQIsb_DEIE1DJc76PVPqxffVp3okPsNvxkeWJ92L4hrjkLjTXDox1HFHifn8eoKGEewfb6JePnX6u9bn1fxqlVwxfO3yuUwW5jWKGZ70nv1Rg5FuFaT-f0hBQMQOsI_KzVDpyXKGAAZFZn52PX7_xcDJyTb52tqiu4n9kygYb1rPNF32AbN1TvdkwF-b775VX9oJDGSoV3o-GZxtKLtHdH9HoMo9LUgeWkZlUktKrVOWpBgh70hxdHZGq-t7E9RNDOYqvLjSqrFwztDnHkQMBlQDOFstv7f0nUHn1S28UDRJWRxfOarA3mLWLfaz3ASoUnADcsbWEEBdwy.HarOxfOP0TerXCwJvDZ--g/__results___files/__results___50_0.png)
 
  
-# STEP 2: Feature Engineering 
+# Step 2: Feature Engineering 
  
 - Feature Engineering is a process of transforming the data into data which is easier to interept and also, to increase the predictive power of learning             algorithm.
 
